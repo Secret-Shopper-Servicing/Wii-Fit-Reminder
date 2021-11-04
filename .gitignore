@@ -1,0 +1,25 @@
+
+*.application
+*.exe
+*.manifest
+Wii Fit Reminder/bin/Debug/Wii Fit Reminder.pdb
+Wii Fit Reminder/bin/Debug/Wii Fit Reminder.xml
+Wii Fit Reminder/bin/Release/app.publish/Application Files/Wii Fit Reminder_1_0_0_0/Wii Fit Reminder.exe.deploy
+Wii Fit Reminder/bin/Release/Wii Fit Reminder.pdb
+Wii Fit Reminder/bin/Release/Wii Fit Reminder.xml
+Wii Fit Reminder/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Wii Fit Reminder/obj/x86/Debug/TempPE/My Project.Resources.Designer.vb.dll
+Wii Fit Reminder/obj/x86/Debug/Wii Fit Reminder.pdb
+Wii Fit Reminder/obj/x86/Debug/Wii Fit Reminder.vbproj.FileListAbsolute.txt
+Wii Fit Reminder/obj/x86/Debug/Wii Fit Reminder.vbproj.GenerateResource.Cache
+Wii Fit Reminder/obj/x86/Debug/Wii Fit Reminder.xml
+Wii Fit Reminder/obj/x86/Debug/Wii_Fit_Reminder.Main.resources
+Wii Fit Reminder/obj/x86/Debug/Wii_Fit_Reminder.Resources.resources
+Wii Fit Reminder/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache
+Wii Fit Reminder/obj/x86/Release/TempPE/My Project.Resources.Designer.vb.dll
+Wii Fit Reminder/obj/x86/Release/Wii Fit Reminder.pdb
+Wii Fit Reminder/obj/x86/Release/Wii Fit Reminder.vbproj.GenerateResource.Cache
+Wii Fit Reminder/obj/x86/Release/Wii Fit Reminder.xml
+Wii Fit Reminder/obj/x86/Release/Wii_Fit_Reminder.Resources.resources
+Wii Fit Reminder/obj/x86/Release/Wii_Fit_Reminder.Main.resources
+Wii Fit Reminder/obj/x86/Release/Wii Fit Reminder.vbproj.FileListAbsolute.txt
