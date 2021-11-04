@@ -1,7 +1,8 @@
 ﻿Public Class Main
-
+    Dim type As String
+    Dim interval As Integer
     Private Sub Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        My.Computer.Audio.Play(My.Resources.plusplus, AudioPlayMode.BackgroundLoop)
+        'My.Computer.Audio.Play(My.Resources.plusplus, AudioPlayMode.BackgroundLoop)
     End Sub
 
     Private Sub CreditButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CreditButton.Click
@@ -10,10 +11,6 @@
 
     Private Sub ByeButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ByeButton.Click
         Me.Close()
-    End Sub
-
-    Private Sub RadioButton1_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FatRadio.CheckedChanged
-
     End Sub
 
     Private Sub SmallRadio_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles SmallRadio.MouseHover
@@ -26,5 +23,27 @@
 
     Private Sub Menu_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles Menu.DoubleClick
         Menu.Show()
+    End Sub
+
+    Private Sub FatRadio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FatRadio.CheckedChanged
+        type = "1 hours"
+        interval = 1
+        IntervalBox.Text = type
+    End Sub
+
+    Private Sub HumanRadio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles HumanRadio.CheckedChanged
+        type = "12 hours"
+        interval = 12
+        IntervalBox.Text = type
+    End Sub
+
+    Private Sub SmallRadio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SmallRadio.CheckedChanged
+        type = "24 hours"
+        interval = 24
+        IntervalBox.Text = type
+    End Sub
+
+    Private Sub FatRadio_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles FatRadio.MouseHover
+        ToolTip1.SetToolTip(FatRadio, "For the large peoples Among Us .....")
     End Sub
 End Class

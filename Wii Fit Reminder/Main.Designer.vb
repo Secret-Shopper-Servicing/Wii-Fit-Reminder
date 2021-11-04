@@ -36,6 +36,8 @@ Partial Class Main
         Me.Menu = New System.Windows.Forms.MenuStrip()
         Me.ConfigureMeButton = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitButton = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IntervalBox = New System.Windows.Forms.TextBox()
+        Me.IntervalLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Menu.SuspendLayout()
         Me.SuspendLayout()
@@ -137,11 +139,30 @@ Partial Class Main
         Me.ExitButton.Size = New System.Drawing.Size(63, 20)
         Me.ExitButton.Text = "ByeBye !"
         '
+        'IntervalBox
+        '
+        Me.IntervalBox.Location = New System.Drawing.Point(234, 94)
+        Me.IntervalBox.Name = "IntervalBox"
+        Me.IntervalBox.ReadOnly = True
+        Me.IntervalBox.Size = New System.Drawing.Size(52, 20)
+        Me.IntervalBox.TabIndex = 9
+        '
+        'IntervalLabel
+        '
+        Me.IntervalLabel.AutoSize = True
+        Me.IntervalLabel.Location = New System.Drawing.Point(244, 71)
+        Me.IntervalLabel.Name = "IntervalLabel"
+        Me.IntervalLabel.Size = New System.Drawing.Size(42, 13)
+        Me.IntervalLabel.TabIndex = 10
+        Me.IntervalLabel.Text = "Interval"
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(298, 210)
+        Me.Controls.Add(Me.IntervalLabel)
+        Me.Controls.Add(Me.IntervalBox)
         Me.Controls.Add(Me.SmallRadio)
         Me.Controls.Add(Me.HumanRadio)
         Me.Controls.Add(Me.SizeLabel)
@@ -175,5 +196,7 @@ Partial Class Main
     Friend WithEvents Menu As System.Windows.Forms.MenuStrip
     Friend WithEvents ConfigureMeButton As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExitButton As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents IntervalBox As System.Windows.Forms.TextBox
+    Friend WithEvents IntervalLabel As System.Windows.Forms.Label
 
 End Class
