@@ -3,7 +3,7 @@
     Dim interval As Integer
     Dim wait As Boolean
     Private Sub Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'My.Computer.Audio.Play(My.Resources.plusplus, AudioPlayMode.BackgroundLoop)
+        My.Computer.Audio.Play(My.Resources.plusplus, AudioPlayMode.BackgroundLoop)
     End Sub
 
     Private Sub CreditButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CreditButton.Click
