@@ -27,7 +27,6 @@ Partial Class Main
         Me.ByeButton = New System.Windows.Forms.Button()
         Me.CreditButton = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.FatRadio = New System.Windows.Forms.RadioButton()
         Me.SizeLabel = New System.Windows.Forms.Label()
         Me.HumanRadio = New System.Windows.Forms.RadioButton()
@@ -38,8 +37,11 @@ Partial Class Main
         Me.ExitButton = New System.Windows.Forms.ToolStripMenuItem()
         Me.IntervalBox = New System.Windows.Forms.TextBox()
         Me.IntervalLabel = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SaveButton = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.DebugButton = New System.Windows.Forms.Button()
         Me.Menu.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ByeButton
@@ -53,22 +55,12 @@ Partial Class Main
         '
         'CreditButton
         '
-        Me.CreditButton.Location = New System.Drawing.Point(100, 175)
+        Me.CreditButton.Location = New System.Drawing.Point(120, 175)
         Me.CreditButton.Name = "CreditButton"
-        Me.CreditButton.Size = New System.Drawing.Size(75, 23)
+        Me.CreditButton.Size = New System.Drawing.Size(55, 23)
         Me.CreditButton.TabIndex = 2
         Me.CreditButton.Text = "Credit ..."
         Me.CreditButton.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = Global.Wii_Fit_Reminder.My.Resources.Resources.wiiwii
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(300, 59)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'FatRadio
         '
@@ -156,11 +148,41 @@ Partial Class Main
         Me.IntervalLabel.TabIndex = 10
         Me.IntervalLabel.Text = "Interval"
         '
+        'SaveButton
+        '
+        Me.SaveButton.Location = New System.Drawing.Point(12, 175)
+        Me.SaveButton.Name = "SaveButton"
+        Me.SaveButton.Size = New System.Drawing.Size(57, 23)
+        Me.SaveButton.TabIndex = 11
+        Me.SaveButton.Text = "Finish!"
+        Me.SaveButton.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = Global.Wii_Fit_Reminder.My.Resources.Resources.wiiwii
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(300, 59)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'DebugButton
+        '
+        Me.DebugButton.Location = New System.Drawing.Point(209, 12)
+        Me.DebugButton.Name = "DebugButton"
+        Me.DebugButton.Size = New System.Drawing.Size(77, 23)
+        Me.DebugButton.TabIndex = 12
+        Me.DebugButton.Text = "OpenRemind"
+        Me.DebugButton.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(298, 210)
+        Me.Controls.Add(Me.DebugButton)
+        Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.IntervalLabel)
         Me.Controls.Add(Me.IntervalBox)
         Me.Controls.Add(Me.SmallRadio)
@@ -172,14 +194,15 @@ Partial Class Main
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Menu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.Menu
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Main"
         Me.Text = "Wii Fit Reminder (Unregistered)"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Menu.ResumeLayout(False)
         Me.Menu.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -198,5 +221,7 @@ Partial Class Main
     Friend WithEvents ExitButton As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents IntervalBox As System.Windows.Forms.TextBox
     Friend WithEvents IntervalLabel As System.Windows.Forms.Label
+    Friend WithEvents SaveButton As System.Windows.Forms.Button
+    Friend WithEvents DebugButton As System.Windows.Forms.Button
 
 End Class

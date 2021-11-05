@@ -46,4 +46,13 @@
     Private Sub FatRadio_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles FatRadio.MouseHover
         ToolTip1.SetToolTip(FatRadio, "For the large peoples Among Us .....")
     End Sub
+
+    Private Sub SaveButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveButton.Click
+        Me.Close() 'make it go to tray
+    End Sub
+
+    Private Sub DebugButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DebugButton.Click
+        Remind.Show()
+        Me.Hide()
+    End Sub
 End Class
