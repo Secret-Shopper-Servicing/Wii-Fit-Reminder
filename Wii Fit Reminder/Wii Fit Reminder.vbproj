@@ -26,7 +26,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -103,6 +103,11 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Remind.Designer.vb">
       <DependentUpon>Remind.vb</DependentUpon>
     </Compile>
@@ -121,11 +126,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -138,9 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Remind.resx">
       <DependentUpon>Remind.vb</DependentUpon>
@@ -155,17 +155,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Wii Fit Reminder_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wiiwii.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\fitfit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plusplus.wav" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
@@ -190,28 +185,35 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\AgitatedProgram.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\MusicMaking.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Icon-6.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\WiiFrend.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Helo.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PissedPGM.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Yay.wav" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\underweight.wav" />
+    <None Include="Resources\thatsit2.wav" />
+    <None Include="Resources\thatsit.wav" />
+    <None Include="Resources\thanks.wav" />
+    <None Include="Resources\stepon.wav" />
+    <None Include="Resources\starting.wav" />
+    <None Include="Resources\ready.wav" />
+    <None Include="Resources\overweight.wav" />
+    <None Include="Resources\openeyes.wav" />
+    <None Include="Resources\oops.wav" />
+    <None Include="Resources\oh.wav" />
+    <None Include="Resources\oh!.wav" />
+    <None Include="Resources\obese.wav" />
+    <None Include="Resources\normal.wav" />
+    <None Include="Resources\morning2.wav" />
+    <None Include="Resources\morning.wav" />
+    <None Include="Resources\measuring.wav" />
+    <None Include="Resources\keepstill.wav" />
+    <None Include="Resources\hello.wav" />
+    <None Include="Resources\great2.wav" />
+    <None Include="Resources\great.wav" />
+    <None Include="Resources\evening.wav" />
+    <None Include="Resources\done.wav" />
+    <None Include="Resources\closeeyes.wav" />
+    <None Include="Resources\batteries.wav" />
+    <None Include="Resources\alldone.wav" />
+    <None Include="Resources\Icon-3.png" />
+    <None Include="Resources\WiiFrend.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

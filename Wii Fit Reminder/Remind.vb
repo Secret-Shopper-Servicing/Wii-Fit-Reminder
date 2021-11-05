@@ -1,32 +1,29 @@
 ﻿Public Class Remind
 
-    Private Sub RefuseButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RefuseButton.Click
-        If MsgBox("You HAVE to do it...", MsgBoxStyle.Critical Or MsgBoxStyle.YesNo, "But Bro...") = MsgBoxResult.No Then
-            ' annoy more
-            If MsgBox("You HAVE to do it, i MEAN it", MsgBoxStyle.Critical Or MsgBoxStyle.YesNo, "But Bro...") = MsgBoxResult.No Then
-                My.Computer.Audio.Play(My.Resources.AgitatedProgram, AudioPlayMode.Background)
-                Process.Start("shutdown.exe", "/s /t 10 /c Shocking.")
-            Else
-                My.Computer.Audio.Stop()
-                Me.Close()
-            End If
+    Private Sub WaitButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles WaitButton.Click
+        If MsgBox("Are you sure you would like to postpone the timer until the next tick?", MsgBoxStyle.Question Or MsgBoxStyle.YesNo, "Postpone Timer") = MsgBoxResult.No Then
+            Me.Close()
         Else
-            My.Computer.Audio.Stop()
+            MessageBox.Show("Timer has not been postponed. Have fun with Wii Fit!", "Postpone Timer")
             Me.Close()
         End If
     End Sub
 
-    Private Sub NowButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NowButton.Click
-        My.Computer.Audio.Play(My.Resources.Yay, AudioPlayMode.Background)
-        MessageBox.Show("Good Job!", "Wii Fit")
+    Private Sub DoneButton_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles DoneButton.Click
         Me.Close()
-    End Sub
-
-    Private Sub Remind_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        My.Computer.Audio.Play(My.Resources.MusicMaking, AudioPlayMode.BackgroundLoop)
     End Sub
 
     Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
 
+    End Sub
+
+    Private Sub Remind_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Try
+            Dim interval As Double
+            interval = Main.Timer1.Interval / 3600000
+            Label2.Text = "The " & interval & " Hour timer has ended;" & vbNewLine & "It is time for you to play Wii Fit!"
+        Catch ex As Exception
+
+        End Try
     End Sub
 End Class

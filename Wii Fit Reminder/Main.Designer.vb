@@ -27,9 +27,9 @@ Partial Class Main
         Me.ByeButton = New System.Windows.Forms.Button()
         Me.CreditButton = New System.Windows.Forms.Button()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.FatRadio = New System.Windows.Forms.RadioButton()
-        Me.HumanRadio = New System.Windows.Forms.RadioButton()
-        Me.SmallRadio = New System.Windows.Forms.RadioButton()
+        Me.ExpertRadio = New System.Windows.Forms.RadioButton()
+        Me.MedRadio = New System.Windows.Forms.RadioButton()
+        Me.EasyRadio = New System.Windows.Forms.RadioButton()
         Me.NotifyMe = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.TrayMenu = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,10 +43,8 @@ Partial Class Main
         Me.SaveButton = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TrayMenu.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,69 +53,67 @@ Partial Class Main
         '
         'ByeButton
         '
-        Me.ByeButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.ByeButton.BackColor = System.Drawing.SystemColors.Control
         Me.ByeButton.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.ByeButton.FlatAppearance.BorderSize = 2
-        Me.ByeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ByeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ByeButton.ForeColor = System.Drawing.Color.White
-        Me.ByeButton.Location = New System.Drawing.Point(142, 175)
+        Me.ByeButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.ByeButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.ByeButton.Location = New System.Drawing.Point(217, 175)
         Me.ByeButton.Name = "ByeButton"
-        Me.ByeButton.Size = New System.Drawing.Size(83, 23)
+        Me.ByeButton.Size = New System.Drawing.Size(69, 23)
         Me.ByeButton.TabIndex = 1
-        Me.ByeButton.Text = "No More!!!"
-        Me.ByeButton.UseVisualStyleBackColor = False
+        Me.ByeButton.Text = "Close"
+        Me.ByeButton.UseVisualStyleBackColor = True
         '
         'CreditButton
         '
-        Me.CreditButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CreditButton.BackColor = System.Drawing.SystemColors.Control
         Me.CreditButton.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.CreditButton.FlatAppearance.BorderSize = 2
-        Me.CreditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CreditButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CreditButton.ForeColor = System.Drawing.Color.White
-        Me.CreditButton.Location = New System.Drawing.Point(75, 175)
+        Me.CreditButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.CreditButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.CreditButton.Location = New System.Drawing.Point(12, 175)
         Me.CreditButton.Name = "CreditButton"
-        Me.CreditButton.Size = New System.Drawing.Size(61, 23)
-        Me.CreditButton.TabIndex = 2
-        Me.CreditButton.Text = "Credit ..."
-        Me.CreditButton.UseVisualStyleBackColor = False
+        Me.CreditButton.Size = New System.Drawing.Size(69, 23)
+        Me.CreditButton.TabIndex = 8
+        Me.CreditButton.Text = "Credits"
+        Me.CreditButton.UseVisualStyleBackColor = True
         '
-        'FatRadio
+        'ExpertRadio
         '
-        Me.FatRadio.AutoSize = True
-        Me.FatRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FatRadio.Location = New System.Drawing.Point(6, 22)
-        Me.FatRadio.Name = "FatRadio"
-        Me.FatRadio.Size = New System.Drawing.Size(160, 19)
-        Me.FatRadio.TabIndex = 4
-        Me.FatRadio.TabStop = True
-        Me.FatRadio.Text = "Fat Peoples (Every Hour)"
-        Me.FatRadio.UseVisualStyleBackColor = True
+        Me.ExpertRadio.AutoSize = True
+        Me.ExpertRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ExpertRadio.Location = New System.Drawing.Point(14, 19)
+        Me.ExpertRadio.Name = "ExpertRadio"
+        Me.ExpertRadio.Size = New System.Drawing.Size(55, 17)
+        Me.ExpertRadio.TabIndex = 4
+        Me.ExpertRadio.TabStop = True
+        Me.ExpertRadio.Text = "Expert"
+        Me.ExpertRadio.UseVisualStyleBackColor = True
         '
-        'HumanRadio
+        'MedRadio
         '
-        Me.HumanRadio.AutoSize = True
-        Me.HumanRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HumanRadio.Location = New System.Drawing.Point(6, 45)
-        Me.HumanRadio.Name = "HumanRadio"
-        Me.HumanRadio.Size = New System.Drawing.Size(140, 19)
-        Me.HumanRadio.TabIndex = 6
-        Me.HumanRadio.TabStop = True
-        Me.HumanRadio.Text = "Peoples (Every 12Hr)"
-        Me.HumanRadio.UseVisualStyleBackColor = True
+        Me.MedRadio.AutoSize = True
+        Me.MedRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MedRadio.Location = New System.Drawing.Point(14, 42)
+        Me.MedRadio.Name = "MedRadio"
+        Me.MedRadio.Size = New System.Drawing.Size(83, 17)
+        Me.MedRadio.TabIndex = 6
+        Me.MedRadio.TabStop = True
+        Me.MedRadio.Text = "Intermediate"
+        Me.MedRadio.UseVisualStyleBackColor = True
         '
-        'SmallRadio
+        'EasyRadio
         '
-        Me.SmallRadio.AutoSize = True
-        Me.SmallRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SmallRadio.Location = New System.Drawing.Point(6, 68)
-        Me.SmallRadio.Name = "SmallRadio"
-        Me.SmallRadio.Size = New System.Drawing.Size(124, 19)
-        Me.SmallRadio.TabIndex = 7
-        Me.SmallRadio.TabStop = True
-        Me.SmallRadio.Text = "Short (Every 24Hr)"
-        Me.SmallRadio.UseVisualStyleBackColor = True
+        Me.EasyRadio.AutoSize = True
+        Me.EasyRadio.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EasyRadio.Location = New System.Drawing.Point(14, 65)
+        Me.EasyRadio.Name = "EasyRadio"
+        Me.EasyRadio.Size = New System.Drawing.Size(48, 17)
+        Me.EasyRadio.TabIndex = 7
+        Me.EasyRadio.TabStop = True
+        Me.EasyRadio.Text = "Easy"
+        Me.EasyRadio.UseVisualStyleBackColor = True
         '
         'NotifyMe
         '
@@ -130,31 +126,31 @@ Partial Class Main
         '
         Me.TrayMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripSeparator1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3})
         Me.TrayMenu.Name = "TrayMenu"
-        Me.TrayMenu.Size = New System.Drawing.Size(177, 76)
+        Me.TrayMenu.Size = New System.Drawing.Size(153, 98)
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Enabled = False
-        Me.ToolStripMenuItem1.Image = Global.Wii_Fit_Reminder.My.Resources.Resources.TheLittleone
+        Me.ToolStripMenuItem1.Image = Global.Wii_Fit_Reminder.My.Resources.Resources.AppIcon
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(176, 22)
-        Me.ToolStripMenuItem1.Text = "Wii Fit Reminder v1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem1.Text = "Options"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(173, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(176, 22)
-        Me.ToolStripMenuItem2.Text = "Open Software ..."
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.ToolStripMenuItem2.Text = "Show"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(176, 22)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
         Me.ToolStripMenuItem3.Text = "Exit"
         '
         'ConfigureMeButton
@@ -171,98 +167,74 @@ Partial Class Main
         '
         'IntervalBox
         '
-        Me.IntervalBox.Location = New System.Drawing.Point(183, 145)
+        Me.IntervalBox.Location = New System.Drawing.Point(187, 145)
         Me.IntervalBox.Name = "IntervalBox"
         Me.IntervalBox.ReadOnly = True
-        Me.IntervalBox.Size = New System.Drawing.Size(103, 20)
+        Me.IntervalBox.Size = New System.Drawing.Size(99, 20)
         Me.IntervalBox.TabIndex = 9
         '
         'IntervalLabel
         '
         Me.IntervalLabel.AutoSize = True
-        Me.IntervalLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.IntervalLabel.Location = New System.Drawing.Point(183, 121)
+        Me.IntervalLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.IntervalLabel.Location = New System.Drawing.Point(244, 129)
         Me.IntervalLabel.Name = "IntervalLabel"
-        Me.IntervalLabel.Size = New System.Drawing.Size(66, 21)
+        Me.IntervalLabel.Size = New System.Drawing.Size(42, 13)
         Me.IntervalLabel.TabIndex = 10
         Me.IntervalLabel.Text = "Interval"
         '
         'SaveButton
         '
-        Me.SaveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SaveButton.BackColor = System.Drawing.SystemColors.Control
         Me.SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.SaveButton.FlatAppearance.BorderSize = 2
-        Me.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.SaveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveButton.ForeColor = System.Drawing.Color.White
-        Me.SaveButton.Location = New System.Drawing.Point(6, 175)
+        Me.SaveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.SaveButton.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.SaveButton.Location = New System.Drawing.Point(142, 175)
         Me.SaveButton.Name = "SaveButton"
-        Me.SaveButton.Size = New System.Drawing.Size(63, 23)
-        Me.SaveButton.TabIndex = 11
-        Me.SaveButton.Text = "Finish!"
-        Me.SaveButton.UseVisualStyleBackColor = False
+        Me.SaveButton.Size = New System.Drawing.Size(69, 23)
+        Me.SaveButton.TabIndex = 8
+        Me.SaveButton.Text = "Apply"
+        Me.SaveButton.UseVisualStyleBackColor = True
         '
         'Timer1
         '
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.FatRadio)
-        Me.GroupBox1.Controls.Add(Me.HumanRadio)
-        Me.GroupBox1.Controls.Add(Me.SmallRadio)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Controls.Add(Me.ExpertRadio)
+        Me.GroupBox1.Controls.Add(Me.MedRadio)
+        Me.GroupBox1.Controls.Add(Me.EasyRadio)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 65)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(165, 100)
         Me.GroupBox1.TabIndex = 12
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Interval Presets .."
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(183, 50)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 21)
-        Me.Label1.TabIndex = 10
-        Me.Label1.Text = "Friend"
+        Me.GroupBox1.Text = "Intensity Levels"
         '
         'PictureBox2
         '
-        Me.PictureBox2.BackgroundImage = Global.Wii_Fit_Reminder.My.Resources.Resources.WiiFrend
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(187, 68)
+        Me.PictureBox2.Image = Global.Wii_Fit_Reminder.My.Resources.Resources.Wiibo
+        Me.PictureBox2.Location = New System.Drawing.Point(187, 65)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(100, 50)
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 61)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 13
         Me.PictureBox2.TabStop = False
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.Wii_Fit_Reminder.My.Resources.Resources.wiiwii
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Image = Global.Wii_Fit_Reminder.My.Resources.Resources.Banner
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(300, 59)
+        Me.PictureBox1.Size = New System.Drawing.Size(299, 59)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(154, Byte), Integer), CType(CType(197, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderSize = 2
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(231, 175)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(56, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Test"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Main
         '
@@ -272,11 +244,9 @@ Partial Class Main
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.SaveButton)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.IntervalLabel)
         Me.Controls.Add(Me.IntervalBox)
         Me.Controls.Add(Me.CreditButton)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ByeButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -284,7 +254,7 @@ Partial Class Main
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Main"
-        Me.Text = "Wii Fit Reminder (Unregistered)"
+        Me.Text = "Wii Fit Reminder"
         Me.TrayMenu.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -298,9 +268,9 @@ Partial Class Main
     Friend WithEvents ByeButton As System.Windows.Forms.Button
     Friend WithEvents CreditButton As System.Windows.Forms.Button
     Friend WithEvents ToolTip1 As System.Windows.Forms.ToolTip
-    Friend WithEvents FatRadio As System.Windows.Forms.RadioButton
-    Friend WithEvents HumanRadio As System.Windows.Forms.RadioButton
-    Friend WithEvents SmallRadio As System.Windows.Forms.RadioButton
+    Friend WithEvents ExpertRadio As System.Windows.Forms.RadioButton
+    Friend WithEvents MedRadio As System.Windows.Forms.RadioButton
+    Friend WithEvents EasyRadio As System.Windows.Forms.RadioButton
     Friend WithEvents NotifyMe As System.Windows.Forms.NotifyIcon
     Friend WithEvents ConfigureMeButton As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ExitButton As System.Windows.Forms.ToolStripMenuItem
@@ -314,8 +284,6 @@ Partial Class Main
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
-    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
