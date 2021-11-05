@@ -26,7 +26,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -75,6 +75,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -185,6 +188,30 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AgitatedProgram.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MusicMaking.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WiiFrend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Helo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PissedPGM.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yay.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

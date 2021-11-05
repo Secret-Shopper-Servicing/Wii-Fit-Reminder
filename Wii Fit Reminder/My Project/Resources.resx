@@ -118,13 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MusicMaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MusicMaking.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TheLittleone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AgitatedProgram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AgitatedProgram.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="wiiwii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wiiwii.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fitfit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fitfit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="plusplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plusplus.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="wiiwii" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wiiwii.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="WiiFrend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WiiFrend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Helo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Helo.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PissedPGM" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PissedPGM.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Yay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yay.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
