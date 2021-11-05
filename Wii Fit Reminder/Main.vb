@@ -1,6 +1,7 @@
 ﻿Public Class Main
     Dim type As String
     Dim interval As Integer
+    Dim wait As Boolean
     Private Sub Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'My.Computer.Audio.Play(My.Resources.plusplus, AudioPlayMode.BackgroundLoop)
     End Sub
@@ -41,6 +42,9 @@
         type = "24 hours"
         interval = 24
         IntervalBox.Text = type
+        While wait = True
+
+        End While
     End Sub
 
     Private Sub FatRadio_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles FatRadio.MouseHover
@@ -48,7 +52,8 @@
     End Sub
 
     Private Sub SaveButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveButton.Click
-        Me.Close() 'make it go to tray
+        wait = True
+        'make it go to tray
     End Sub
 
     Private Sub DebugButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DebugButton.Click
