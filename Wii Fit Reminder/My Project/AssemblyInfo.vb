@@ -9,10 +9,10 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Wii Fit Reminder")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyDescription("Are you i nneed of Fit? Get into a routine for you Wii console with this helpful APPLET !")> 
+<Assembly: AssemblyCompany("Workplace2Software x SecretShopperServicing")> 
 <Assembly: AssemblyProduct("Wii Fit Reminder")> 
-<Assembly: AssemblyCopyright("Copyright ©  2021")> 
+<Assembly: AssemblyCopyright("Copyright © SecretShopperServicing 2022")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.1.0")> 
+<Assembly: AssemblyFileVersion("1.0.1.0")> 

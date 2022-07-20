@@ -103,6 +103,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FatFamiliesPromo.Designer.vb">
+      <DependentUpon>FatFamiliesPromo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FatFamiliesPromo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Remind.Designer.vb">
       <DependentUpon>Remind.vb</DependentUpon>
     </Compile>
@@ -133,6 +139,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FatFamiliesPromo.resx">
+      <DependentUpon>FatFamiliesPromo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +221,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\Bull.wav" />
+    <None Include="Resources\PISSEDSteveLard.jpg" />
+    <None Include="Resources\PissedMiller.wav" />
+    <None Include="Resources\Miller.wav" />
+    <None Include="Resources\SteveLardPointsAtU.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

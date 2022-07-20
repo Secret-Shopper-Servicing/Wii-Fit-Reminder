@@ -117,50 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="MusicMaking" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MusicMaking.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TheLittleone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="PissedPGM" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PissedPGM.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="AgitatedProgram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AgitatedProgram.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="wiiwii" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wiiwii.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Helo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Helo.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Yay" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Yay.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="fitfit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fitfit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WiiFrend" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WiiFrend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="plusplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\plusplus.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SteveLardPointsAtU" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SteveLardPointsAtU.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bull" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bull.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Miller" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Miller.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PissedMiller" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PissedMiller.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="PISSEDSteveLard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PISSEDSteveLard.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAQEAAAAAAIAABBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAABAAAAAQAgGAAAAqmlx3gAAAAFz
+        UkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADlklEQVR4Xu2b/4dU
+        YRTG++8SEYmIiIhIREREJCIi+ikSkYiIiIhEREREIiIiIhIR/bA9n20Ox3XuzHun3mfX3X342Jk7u3bO
+        M++Xe855Z8/GDteuAYufO1bTDPgs3v59OBe1G3BT7BXnN5/NRu0G3BAYcHDz2WzUbsA9gQHwjgvzULsB
+        T0UYcER8EzNQuwEEvE+ECcfFF9FDX8Ub8UTcFdfFRXFGHB1wSpwVV8UD8UlMULsB6IIIAwBDLgne7BT9
+        Euwor8RDwfrC4npMZJPXBaMaNc0A5v7YGzwsTgpMuibuLLgl+HQIkE+L36v+/n/CaGnUNAMQw6z6p9sJ
+        tuxGTTcAMWz3i+qfbwd4f41azwD0UTDUehnBVGNKXRFModuCKfVYsDgyEmOaMeWY9+xO/C1rS6PWNyD0
+        Q7wQvMGY56zOw4BaYLVnu/0gfot1xAILjfp3A6bosqgCD3ptq0vkNYD9ugo84JM3y2vACVEFHky9n/gP
+        8hoQi9QYrCVmeQ2ogs6wupvlM4Ddogo6c1+Y5TOAFb4KOsOebpbPAEppVdAZkiKzfAa8FFXQGe74zPIZ
+        wAJXBZ3Zgnqjz4BcUhuDGyWzfAZQF4hASXTOLcj1BapMZvkMYH5HoO+5sBCP4zpJlFk+A6KcRtlrKK7x
+        GqPBLJ8B5OsEeUDkdJXHXItRYJbPgFwjYD2g8gt5bQBzSuwzgI5SDnSM2RpQBVthTok9BjDUq2ArXguj
+        PAZQQK2CrTCnxB4DGNY5SLpJz8UzMSyTUfU1ymMAgUaAw4SH6u9pEa+bU2KPAY9EBFgVPhkN8TrbolEe
+        A/hUI8Cqe5tTZXNK7DEgTpcAWeFQOU9gfTDKYwDtrQiQVhq9u++CMwd0lOI1MKfEHgNWNUQytNaM8hhA
+        k7MKtsKcEnsMmNIsNZ9C8xgwdqpkDKP6G/BTVEHSJxxrldFEMam/AVVDJN8MVUdujClxfwM4WJWDG57g
+        YoQMT5nkmmFn9TeA4yo5OHaELO4HhmuEsSbQ34CqIUJyRC2QOkG+SwzIDUzqbwAd32GAkAuhQ4w1gf4G
+        DG91W6jyhU7qb0BOdFox1gT6G8BZwirIZXDuz6T+BkxJhAJjTaC/AdH2mgJNU5P6G3BIVEEuw1gT6G9A
+        FeAqjClxXwOo+FQBrmI2BiBudckHuPvj6y+s8MzxVTUCk/obsEz0BOKrM5TOKYlTFDWWxbbWgG2gXQMW
+        P3eoNjb+AMzt6jKbTlyBAAAAAElFTkSuQmCC
+</value>
   </data>
 </root>

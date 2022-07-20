@@ -55,6 +55,7 @@
         If radioSelect = "fat" Then
             MessageBox.Show("FATTY", "FAT")
             interval = 3600000
+            FatPersonTimer.Start()
             Me.Hide()
         ElseIf radioSelect = "human" Then
             MessageBox.Show("NICE", "HUMAN")
@@ -111,5 +112,10 @@
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Remind.Show()
+    End Sub
+
+    Private Sub FatPersonTimer_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FatPersonTimer.Tick
+        FatPersonTimer.Stop()
+        FatFamiliesPromo.Show()
     End Sub
 End Class

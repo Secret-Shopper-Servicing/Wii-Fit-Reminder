@@ -47,6 +47,7 @@ Partial Class Main
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.FatPersonTimer = New System.Windows.Forms.Timer(Me.components)
         Me.TrayMenu.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -138,7 +139,7 @@ Partial Class Main
         Me.ToolStripMenuItem1.Image = Global.Wii_Fit_Reminder.My.Resources.Resources.TheLittleone
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(176, 22)
-        Me.ToolStripMenuItem1.Text = "Wii Fit Reminder v1"
+        Me.ToolStripMenuItem1.Text = "Wii Fit Reminder v1.0.1"
         '
         'ToolStripSeparator1
         '
@@ -264,6 +265,10 @@ Partial Class Main
         Me.Button1.Text = "Test"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'FatPersonTimer
+        '
+        Me.FatPersonTimer.Interval = 300000
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -317,5 +322,6 @@ Partial Class Main
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents FatPersonTimer As System.Windows.Forms.Timer
 
 End Class
